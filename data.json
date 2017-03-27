@@ -1,0 +1,636 @@
+{
+    "subject": "jsonApp",
+    "columns": [{
+        "key": "Location",
+        "full_name": "Location",
+        "type": "text",
+        "is_objective": false,
+        "goal": "max"
+    }, {
+        "key": "Distance from City Center",
+        "full_name": "Distance from City Center",
+        "type": "numeric",
+        "is_objective": true,
+        "goal": "max"
+    }, {
+        "key": "Type",
+        "full_name": "Type",
+        "type": "categorical",
+        "is_objective": true,
+        "goal": "max",
+        "range": ["Historical", "Temple", "Museum", "Outdoors", "Garden", "Shopping", "Waterfront", "Educational", "Lake", "Dam", "Fort", "Water Park"]
+    }, {
+        "key": "Entry Fee",
+        "full_name": "Entry Fee",
+        "type": "numeric",
+        "is_objective": true,
+        "goal": "max"
+    }, {
+        "key": "Rating",
+        "full_name": "Rating",
+        "type": "numeric",
+        "is_objective": true,
+        "goal": "max"
+    }, {
+        "key": "Number of Visitors",
+        "full_name": "Number of Visitors",
+        "type": "numeric",
+        "is_objective": true,
+        "goal": "max"
+    }, {
+        "key": "Recommendation",
+        "full_name": "Recommendation",
+        "type": "numeric",
+        "is_objective": true,
+        "goal": "max"
+    }],
+    "options": [{
+        "key": 1,
+        "name": "Aga Khan Palace",
+        "values": {
+            "Location": "Aga Khan Palace",
+            "Distance from City Center": 10.8,
+            "Type": "Historical",
+            "Entry Fee": 80,
+            "Rating": 1.2,
+            "Number of Visitors": 13000,
+            "Recommendation": 1
+        }
+    }, {
+        "key": 2,
+        "name": "Shreemant Dagdusheth Halwai Sarvajanik Ganpati",
+        "values": {
+            "Location": "Shreemant Dagdusheth Halwai Sarvajanik Ganpati",
+            "Distance from City Center": 3.6,
+            "Type": "Temple",
+            "Entry Fee": 10,
+            "Rating": 1.2,
+            "Number of Visitors": 7000,
+            "Recommendation": 2
+        }
+    }, {
+        "key": 3,
+        "name": "Darshan Museum",
+        "values": {
+            "Location": "Darshan Museum",
+            "Distance from City Center": 8.4,
+            "Type": "Museum",
+            "Entry Fee": 30,
+            "Rating": 3.6,
+            "Number of Visitors": 12000,
+            "Recommendation": 3
+        }
+    }, {
+        "key": 4,
+        "name": "ISKCON NVCC Temple",
+        "values": {
+            "Location": "ISKCON NVCC Temple",
+            "Distance from City Center": 12,
+            "Type": "Temple",
+            "Entry Fee": 0,
+            "Rating": 2.4,
+            "Number of Visitors": 7000,
+            "Recommendation": 4
+        }
+    }, {
+        "key": 5,
+        "name": "Sri Balaji Mandir",
+        "values": {
+            "Location": "Sri Balaji Mandir",
+            "Distance from City Center": 4.8,
+            "Type": "Temple",
+            "Entry Fee": 100,
+            "Rating": 2.4,
+            "Number of Visitors": 3000,
+            "Recommendation": 5
+        }
+    }, {
+        "key": 6,
+        "name": "Sinhagad Fort",
+        "values": {
+            "Location": "Sinhagad Fort",
+            "Distance from City Center": 8.4,
+            "Type": "Outdoors",
+            "Entry Fee": 0,
+            "Rating": 1.2,
+            "Number of Visitors": 13000,
+            "Recommendation": 6
+        }
+    }, {
+        "key": 7,
+        "name": "Sarasbaug Ganpati Temple",
+        "values": {
+            "Location": "Sarasbaug Ganpati Temple",
+            "Distance from City Center": 8.4,
+            "Type": "Temple",
+            "Entry Fee": 40,
+            "Rating": 3.6,
+            "Number of Visitors": 7000,
+            "Recommendation": 7
+        }
+    }, {
+        "key": 8,
+        "name": "Malshej Ghats",
+        "values": {
+            "Location": "Malshej Ghats",
+            "Distance from City Center": 8.4,
+            "Type": "Outdoors",
+            "Entry Fee": 50,
+            "Rating": 4.8,
+            "Number of Visitors": 13000,
+            "Recommendation": 8
+        }
+    }, {
+        "key": 9,
+        "name": "Chaturshrungi Temple",
+        "values": {
+            "Location": "Chaturshrungi Temple",
+            "Distance from City Center": 7.2,
+            "Type": "Temple",
+            "Entry Fee": 50,
+            "Rating": 3.6,
+            "Number of Visitors": 2000,
+            "Recommendation": 9
+        }
+    }, {
+        "key": 10,
+        "name": "Pu La Deshpande Garden",
+        "values": {
+            "Location": "Pu La Deshpande Garden",
+            "Distance from City Center": 1.2,
+            "Type": "Garden",
+            "Entry Fee": 10,
+            "Rating": 2.4,
+            "Number of Visitors": 13000,
+            "Recommendation": 10
+        }
+    }, {
+        "key": 11,
+        "name": "Phoenix Market City",
+        "values": {
+            "Location": "Phoenix Market City",
+            "Distance from City Center": 8.4,
+            "Type": "Shopping",
+            "Entry Fee": 30,
+            "Rating": 2.4,
+            "Number of Visitors": 7000,
+            "Recommendation": 11
+        }
+    }, {
+        "key": 12,
+        "name": "Raja Dinkar Kelkar Museum",
+        "values": {
+            "Location": "Raja Dinkar Kelkar Museum",
+            "Distance from City Center": 3.6,
+            "Type": "Museum",
+            "Entry Fee": 20,
+            "Rating": 4.8,
+            "Number of Visitors": 2000,
+            "Recommendation": 12
+        }
+    }, {
+        "key": 13,
+        "name": "National Defence Academy",
+        "values": {
+            "Location": "National Defence Academy",
+            "Distance from City Center": 9.6,
+            "Type": "Outdoors",
+            "Entry Fee": 60,
+            "Rating": 1.2,
+            "Number of Visitors": 3000,
+            "Recommendation": 13
+        }
+    }, {
+        "key": 14,
+        "name": "Ranjangaon Ganpati Temple",
+        "values": {
+            "Location": "Ranjangaon Ganpati Temple",
+            "Distance from City Center": 12,
+            "Type": "Temple",
+            "Entry Fee": 50,
+            "Rating": 2.4,
+            "Number of Visitors": 7000,
+            "Recommendation": 14
+        }
+    }, {
+        "key": 15,
+        "name": "Laxmi Road",
+        "values": {
+            "Location": "Laxmi Road",
+            "Distance from City Center": 4.8,
+            "Type": "Shopping",
+            "Entry Fee": 60,
+            "Rating": 1.2,
+            "Number of Visitors": 10000,
+            "Recommendation": 15
+        }
+    }, {
+        "key": 16,
+        "name": "Parvati Temple",
+        "values": {
+            "Location": "Parvati Temple",
+            "Distance from City Center": 8.4,
+            "Type": "Temple",
+            "Entry Fee": 60,
+            "Rating": 1.2,
+            "Number of Visitors": 8000,
+            "Recommendation": 16
+        }
+    }, {
+        "key": 17,
+        "name": "Pataleshwar Cave Temple",
+        "values": {
+            "Location": "Pataleshwar Cave Temple",
+            "Distance from City Center": 10.8,
+            "Type": "Historical",
+            "Entry Fee": 90,
+            "Rating": 1.2,
+            "Number of Visitors": 8000,
+            "Recommendation": 17
+        }
+    }, {
+        "key": 18,
+        "name": "Rajgad Fort",
+        "values": {
+            "Location": "Rajgad Fort",
+            "Distance from City Center": 7.2,
+            "Type": "Outdoors",
+            "Entry Fee": 30,
+            "Rating": 2.4,
+            "Number of Visitors": 8000,
+            "Recommendation": 18
+        }
+    }, {
+        "key": 19,
+        "name": "Pawana Lake",
+        "values": {
+            "Location": "Pawana Lake",
+            "Distance from City Center": 1.2,
+            "Type": "Waterfront",
+            "Entry Fee": 80,
+            "Rating": 4.8,
+            "Number of Visitors": 12000,
+            "Recommendation": 19
+        }
+    }, {
+        "key": 20,
+        "name": "Bhuleshwar Temple",
+        "values": {
+            "Location": "Bhuleshwar Temple",
+            "Distance from City Center": 6,
+            "Type": "Temple",
+            "Entry Fee": 70,
+            "Rating": 1.2,
+            "Number of Visitors": 12000,
+            "Recommendation": 20
+        }
+    }, {
+        "key": 21,
+        "name": "Shaniwar Wada",
+        "values": {
+            "Location": "Shaniwar Wada",
+            "Distance from City Center": 6,
+            "Type": "Historical",
+            "Entry Fee": 30,
+            "Rating": 3.6,
+            "Number of Visitors": 2000,
+            "Recommendation": 21
+        }
+    }, {
+        "key": 22,
+        "name": "Mulshi Dam",
+        "values": {
+            "Location": "Mulshi Dam",
+            "Distance from City Center": 9.6,
+            "Type": "Waterfront",
+            "Entry Fee": 90,
+            "Rating": 3.6,
+            "Number of Visitors": 7000,
+            "Recommendation": 22
+        }
+    }, {
+        "key": 23,
+        "name": "University of Pune",
+        "values": {
+            "Location": "University of Pune",
+            "Distance from City Center": 7.2,
+            "Type": "Educational",
+            "Entry Fee": 30,
+            "Rating": 3.6,
+            "Number of Visitors": 12000,
+            "Recommendation": 23
+        }
+    }, {
+        "key": 24,
+        "name": "Seasons Mall",
+        "values": {
+            "Location": "Seasons Mall",
+            "Distance from City Center": 4.8,
+            "Type": "Shopping",
+            "Entry Fee": 100,
+            "Rating": 3.6,
+            "Number of Visitors": 12000,
+            "Recommendation": 24
+        }
+    }, {
+        "key": 25,
+        "name": "Rajiv Gandhi Zoological Park",
+        "values": {
+            "Location": "Rajiv Gandhi Zoological Park",
+            "Distance from City Center": 12,
+            "Type": "Garden",
+            "Entry Fee": 60,
+            "Rating": 1.2,
+            "Number of Visitors": 13000,
+            "Recommendation": 25
+        }
+    }, {
+        "key": 26,
+        "name": "M.G.Road",
+        "values": {
+            "Location": "M.G.Road",
+            "Distance from City Center": 5.5,
+            "Type": "Shopping",
+            "Entry Fee": 0,
+            "Rating": 2.5,
+            "Number of Visitors": 4000,
+            "Recommendation": 26
+        }
+    }, {
+        "key": 27,
+        "name": "Osho Garden",
+        "values": {
+            "Location": "Osho Garden",
+            "Distance from City Center": 9.6,
+            "Type": "Garden",
+            "Entry Fee": 0,
+            "Rating": 4.8,
+            "Number of Visitors": 10000,
+            "Recommendation": 27
+        }
+    }, {
+        "key": 28,
+        "name": "Mahatma Gandhi Road",
+        "values": {
+            "Location": "Mahatma Gandhi Road",
+            "Distance from City Center": 6,
+            "Type": "Shopping",
+            "Entry Fee": 0,
+            "Rating": 3.2,
+            "Number of Visitors": 5600,
+            "Recommendation": 28
+        }
+    }, {
+        "key": 29,
+        "name": "Old Topkhana",
+        "values": {
+            "Location": "Old Topkhana",
+            "Distance from City Center": 10,
+            "Type": "Historical",
+            "Entry Fee": 0,
+            "Rating": 3.7,
+            "Number of Visitors": 10200,
+            "Recommendation": 29
+        }
+    }, {
+        "key": 30,
+        "name": "Pune Market",
+        "values": {
+            "Location": "Pune Market",
+            "Distance from City Center": 15,
+            "Type": "Shopping",
+            "Entry Fee": 0,
+            "Rating": 3,
+            "Number of Visitors": 10000,
+            "Recommendation": 30
+        }
+    }, {
+        "key": 31,
+        "name": "Omakareshwar Temple",
+        "values": {
+            "Location": "Omakareshwar Temple",
+            "Distance from City Center": 10.2,
+            "Type": "Temple",
+            "Entry Fee": 0,
+            "Rating": 3.4,
+            "Number of Visitors": 12000,
+            "Recommendation": 31
+        }
+    }, {
+        "key": 32,
+        "name": "Lal Mahal",
+        "values": {
+            "Location": "Lal Mahal",
+            "Distance from City Center": 8,
+            "Type": "Historical",
+            "Entry Fee": 5,
+            "Rating": 4.3,
+            "Number of Visitors": 8600,
+            "Recommendation": 32
+        }
+    }, {
+        "key": 33,
+        "name": "City Mall",
+        "values": {
+            "Location": "City Mall",
+            "Distance from City Center": 2.3,
+            "Type": "Shopping",
+            "Entry Fee": 0,
+            "Rating": 3.3,
+            "Number of Visitors": 22000,
+            "Recommendation": 33
+        }
+    }, {
+        "key": 34,
+        "name": "Khadakvasla",
+        "values": {
+            "Location": "Khadakvasla",
+            "Distance from City Center": 15,
+            "Type": "Waterfront",
+            "Entry Fee": 5,
+            "Rating": 4.3,
+            "Number of Visitors": 15000,
+            "Recommendation": 34
+        }
+    }, {
+        "key": 35,
+        "name": "Vishambaug Wada",
+        "values": {
+            "Location": "Vishambaug Wada",
+            "Distance from City Center": 9.2,
+            "Type": "Historical",
+            "Entry Fee": 10,
+            "Rating": 4.2,
+            "Number of Visitors": 4300,
+            "Recommendation": 35
+        }
+    }, {
+        "key": 36,
+        "name": "Tulsi Baug",
+        "values": {
+            "Location": "Tulsi Baug",
+            "Distance from City Center": 4.5,
+            "Type": "Shopping",
+            "Entry Fee": 0,
+            "Rating": 4,
+            "Number of Visitors": 15788,
+            "Recommendation": 36
+        }
+    }, {
+        "key": 37,
+        "name": "Dinosour Garden",
+        "values": {
+            "Location": "Dinosour Garden",
+            "Distance from City Center": 5,
+            "Type": "Garden",
+            "Entry Fee": 10,
+            "Rating": 3.2,
+            "Number of Visitors": 5600,
+            "Recommendation": 37
+        }
+    }, {
+        "key": 38,
+        "name": "Ferguson College",
+        "values": {
+            "Location": "Ferguson College",
+            "Distance from City Center": 7.2,
+            "Type": "Educational",
+            "Entry Fee": 50,
+            "Rating": 4.4,
+            "Number of Visitors": 46800,
+            "Recommendation": 38
+        }
+    }, {
+        "key": 39,
+        "name": "Katraj Jain Temple",
+        "values": {
+            "Location": "Katraj Jain Temple",
+            "Distance from City Center": 10.2,
+            "Type": "Temple",
+            "Entry Fee": 25,
+            "Rating": 4.2,
+            "Number of Visitors": 10200,
+            "Recommendation": 39
+        }
+    }, {
+        "key": 40,
+        "name": "Pashan Lake",
+        "values": {
+            "Location": "Pashan Lake",
+            "Distance from City Center": 5.5,
+            "Type": "Lake",
+            "Entry Fee": 55,
+            "Rating": 4.5,
+            "Number of Visitors": 10000,
+            "Recommendation": 40
+        }
+    }, {
+        "key": 41,
+        "name": "Tribal Museum",
+        "values": {
+            "Location": "Tribal Museum",
+            "Distance from City Center": 8.5,
+            "Type": "Museum",
+            "Entry Fee": 0,
+            "Rating": 3.8,
+            "Number of Visitors": 78000,
+            "Recommendation": 41
+        }
+    }, {
+        "key": 42,
+        "name": "Panshet Dam",
+        "values": {
+            "Location": "Panshet Dam",
+            "Distance from City Center": 15,
+            "Type": "Dam",
+            "Entry Fee": 70,
+            "Rating": 3.3,
+            "Number of Visitors": 56000,
+            "Recommendation": 42
+        }
+    }, {
+        "key": 43,
+        "name": "Model colony Lake",
+        "values": {
+            "Location": "Model colony Lake",
+            "Distance from City Center": 8.8,
+            "Type": "Lake",
+            "Entry Fee": 50,
+            "Rating": 2.2,
+            "Number of Visitors": 6900,
+            "Recommendation": 43
+        }
+    }, {
+        "key": 44,
+        "name": "Purandar Fort",
+        "values": {
+            "Location": "Purandar Fort",
+            "Distance from City Center": 40,
+            "Type": "Fort",
+            "Entry Fee": 55,
+            "Rating": 4.4,
+            "Number of Visitors": 78400,
+            "Recommendation": 44
+        }
+    }, {
+        "key": 45,
+        "name": "Diamond Water Park",
+        "values": {
+            "Location": "Diamond Water Park",
+            "Distance from City Center": 9,
+            "Type": "Water Park",
+            "Entry Fee": 100,
+            "Rating": 2.9,
+            "Number of Visitors": 65000,
+            "Recommendation": 45
+        }
+    }, {
+        "key": 46,
+        "name": "Koregao Park",
+        "values": {
+            "Location": "Koregao Park",
+            "Distance from City Center": 10.2,
+            "Type": "Shopping",
+            "Entry Fee": 0,
+            "Rating": 2.8,
+            "Number of Visitors": 5600,
+            "Recommendation": 46
+        }
+    }, {
+        "key": 47,
+        "name": "Krushnai Water Park",
+        "values": {
+            "Location": "Krushnai Water Park",
+            "Distance from City Center": 8,
+            "Type": "Water Park",
+            "Entry Fee": 120,
+            "Rating": 3.5,
+            "Number of Visitors": 23000,
+            "Recommendation": 47
+        }
+    }, {
+        "key": 48,
+        "name": "Parvati Hill Temple",
+        "values": {
+            "Location": "Parvati Hill Temple",
+            "Distance from City Center": 12,
+            "Type": "Temple",
+            "Entry Fee": 0,
+            "Rating": 4.2,
+            "Number of Visitors": 12400,
+            "Recommendation": 48
+        }
+    }, {
+        "key": 49,
+        "name": "Lonavala Lake",
+        "values": {
+            "Location": "Lonavala Lake",
+            "Distance from City Center": 3.6,
+            "Type": "Waterfront",
+            "Entry Fee": 60,
+            "Rating": 4.8,
+            "Number of Visitors": 8000,
+            "Recommendation": 49
+        }
+    }]
+}
